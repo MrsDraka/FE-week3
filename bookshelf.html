@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf - ProsePalette Book Picks</title>
+    <!--including bootstrap in my code using relative location -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="bg-light text-dark" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+    <!-- this is my navigation bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ProsePalette</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ppmenu"
+                aria-controls="ppmenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="ppmenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Bookshelf</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sharebook.html">Share a Book</a>
+                    </li>
+
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--This is a container with the introduction to this page's section-->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 p-4" style="text-align: center">
+                <h1>Welcome to ProsePalette's Bookshelf!</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-6 p-4 mb-3">
+                        <h3 class="mb-4">Dive into a world of literary wonders as you explore our curated collection of
+                            books.
+                            From timeless
+                            classics to contemporary gems, our bookshelf invites you to embark on diverse reading
+                            adventures.
+                            Discover stories that captivate, characters that resonate, and genres that spark your
+                            imagination.
+                            Happy
+                            browsing and happy reading!</h3>
+
+
+
+
+
+                        <div class="card bg-danger text-light rounded-3 mb-3 p-4">
+                            <blockquote class="blockquote text-center">
+                                <p>
+                                    "A room without books is like a body without a soul."
+                                </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mb-0 text-light text-center">
+                                Marcus Tullius Cicero
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-4"><img style="max-height: 450px;" class="img-fluid rounded text-center"
+                            src="images/bookshelf.png" alt="cozy reading nook">
+                        <p>
+
+                        </p>
+
+                        <!--Added a dropdown menu button the allows visitors to jump directly to a specific genre, I realized this would be handy when I noticed how long the page was getting-->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Jump to genre
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#scifi">Science Fiction</a>
+                                <a class="dropdown-item" href="#novel">Novel</a>
+                                <a class="dropdown-item" href="#fantasy">Fantasy</a>
+                                <a class="dropdown-item" href="#nonfiction">Non-fiction</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--containter which displays all books-->
+    </div>
+    <div class="container mb-4">
+        <!--Science Fiction-->
+        <div class="bg-danger text-light device-width p-2 text-center">
+            <h2 id="scifi">Science Fiction</h2>
+        </div>
+        <!--Containers with the cards for showcasing each of the books-->
+
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row p-4 mp-4">
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/001-2002spaceodyssey.jpg" class="card-img-top"
+                            alt="2001: Space Odyssey Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">2001: Space Odyssey</h5>
+                            <p class="card-text">Author: Arthur Clarke</p>
+                            <p class="card-text">Year: 1968</p>
+                            <p class="card-text">Genre: Science Fiction</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card-text">Description: A strange enigma is discovered on the moon. The discovery
+                                has
+                                great implications and men are sent out deep into the solar system. But things begin to
+                                go
+                                horribly wrong. Arthur C. Clarke collaborated with film director, Stanley Kubrick,
+                                writing
+                                the novel while Kubrick created the film.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/005-cloudatlas.jpg" class="card-img-top"
+                            alt="Cloud Atlas Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud Atlas</h5>
+                            <p class="card-text">Author: David Mitchel</p>
+                            <p class="card-text">Year: 2004</p>
+                            <p class="card-text">Genre: Science Fiction</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card-text">Description: 'Souls cross ages like clouds cross skies ...' Cloud Atlas
+                                by David Mitchell spans ages and continents,
+                                entwining lives from a reluctant voyager in 1850 to a futuristic server on death-row.
+                                Their destinies echo through history, erasing boundaries of language and genre,
+                                exploring humanity's dangerous pursuit of power in a meditation on our uncertain future.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/003-hitchhikerguide.jpg" class="card-img-top"
+                            alt="Hitchhiker's Guide to the Galaxy Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">The Hitchhiker's Guide to the Galaxy</h5>
+                            <p class="card-text">Author: Douglas Adams</p>
+                            <p class="card-text">Year: 1979</p>
+                            <p class="card-text">Genre: Science Fiction</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card-text">Description: Seconds before the Earth is demolished to make way for a
+                                galactic freeway, Arthur Dent is whisked away by Ford Prefect, a
+                                researcher for The Hitchhiker's Guide to the Galaxy. They embark on a cosmic journey
+                                with oddball companions like Zaphod Beeblebrox and Marvin the paranoid robot, seeking
+                                answers to life's mysteries. Packed with humor and wisdom from the Guide, the adventure
+                                unfolds across the galaxy, reminding us all: "Don't panic" and always carry a towel!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row p-4 mp-4">
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/016-foundation.jpg" class="card-img-top"
+                            alt="Foundation Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">Foundation</h5>
+                            <p class="card-text">Author: Isaac Asimov</p>
+                            <p class="card-text">Year: 1953</p>
+                            <p class="card-text">Genre: Science Fiction</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            <p class="card-text">Description: Foundation begins a new chapter in the story of man's
+                                future. As
+                                the Old Empire crumbles into barbarism throughout the million worlds of the galaxy, Hari
+                                Seldon
+                                and his band of psychologists must create a new entity, the Foundation-dedicated to art,
+                                science, and technology-as the beginning of a new empire.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/023-neuromancer.jpg" class="card-img-top"
+                            alt="Neuromancer Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">Neuromancer</h5>
+                            <p class="card-text">Author: William Gibson</p>
+                            <p class="card-text">Year: 1984</p>
+                            <p class="card-text">Genre: Science Fiction</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            <p class="card-text">Description: Twenty years ago, the future blazed into existence with
+                                each deliberate word that William Gibson laid down.
+                                The winner
+                                of Hugo, Nebula, and Philip K. Dick Awards, Neuromancer didn't just explode onto the
+                                science
+                                fiction scene - it permeated into the collective consciousness, culture, science, and
+                                technology.Today, there is only one science fiction masterpiece to thank for the term
+                                "cyberpunk," for easing the way into the information age and Internet society.</p>
+                        </div>
+                    </div>
+
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/017-childrenoftime.jpg" class="card-img-top"
+                            alt="Children of Time Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">Children of Time</h5>
+                            <p class="card-text">Author: Adrian Tchaikovsky</p>
+                            <p class="card-text">Year: 2015</p>
+                            <p class="card-text">Genre: Science Fiction</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            <p class="card-text">Description: The last remnants of the
+                                human
+                                race left a dying Earth, desperate to find a new home among the stars. Following in the
+                                footsteps of their ancestors they discover the greatest treasure of the past age—a world
+                                terraformed and prepared for human life. But all is not right in this new Eden. In the
+                                long
+                                years since the planet was abandoned, the work of its architects has born disastrous
+                                fruit. As the fate of humanity hangs in
+                                the
+                                balance, who are the true heirs of this new Earth?
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row p-4 mp-4">
+
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/021-hotline.jpg" class="card-img-top"
+                            alt="The Ophiuchi Hotline Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">The Ophiuchi Hotline</h5>
+                            <p class="card-text">Author: John Varley</p>
+                            <p class="card-text">Year: 1977</p>
+                            <p class="card-text">Genre: Science Fiction</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            <p class="card-text">Description: Gollancz's Science Fiction Collector's series, which
+                                offers the
+                                finest classics of the genre, now presents an engaging novel by acclaimed author John
+                                Varley.
+                                After the capture of Earth by vastly superior aliens, humanity is forced to
+                                fight for existence on the Moon and other lumps of rock. The invention of the
+                                Hotline facilitates survival and the development of new technologies.
+                                Then, after 400 years, humanity's unknown helpers send a bill for their services...and
+                                suddenly everything is threatened once again.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/019-electricsheep.jpg" class="card-img-top"
+                            alt="Do Android Dream of Electric Sheep? Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">Do Androids Dream of Electric Sheep?</h5>
+                            <p class="card-text">Author: Philip K. Dick</p>
+                            <p class="card-text">Year: 1968</p>
+                            <p class="card-text">Genre: Science Fiction</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            <p class="card-text">Description: It was January 2021, and Rick Deckard had a license to
+                                kill.
+                                Somewhere among the hordes of humans out there, lurked several rogue androids. Deckard's
+                                assignment--find them and then..."retire" them. Trouble was, the androids all looked
+                                exactly
+                                like humans, and they didn't want to be found!
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--Novel genre section-->
+        <div class="bg-danger text-light device-width p-2 text-center">
+            <h2 id="novel">Novel</h2>
+        </div>
+        <!--Novel Book cards-->
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row p-4 mp-4">
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/018-outsiders.jpg" id="outsiders" class="card-img-top"
+                            alt="The Outsiders Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">The Outsiders</h5>
+                            <p class="card-text">Author: S.E. Hinton</p>
+                            <p class="card-text">Year: 1967</p>
+                            <p class="card-text">Genre: Novel</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card-text">Description: No one ever said life was easy. But Ponyboy is pretty sure
+                                that he's got things figured out. He knows that he can count on his brothers, Darry and
+                                Sodapop. And he knows that he can count on his friends—true friends who would do
+                                anything for him, like Johnny and Two-Bit. But not on much else besides trouble with the
+                                Socs, a vicious gang of rich kids whose idea of a good time is beating up on “greasers”
+                                like Ponyboy. At least he knows what to expect—until the night someone takes things too
+                                far.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/015-perfume.jpg" class="card-img-top" alt="Perfume Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">Perfume: The Story of a Murderer</h5>
+                            <p class="card-text">Author: Patrick Suskind</p>
+                            <p class="card-text">Year: 1985</p>
+                            <p class="card-text">Genre: Novel</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card-text">Description: In the slums of eighteenth-century France, the infant
+                                Jean-Baptiste Grenouille is born with one sublime gift—an absolute sense of smell. As a
+                                boy, he lives to decipher the odors of Paris, and apprentices himself to a prominent
+                                perfumer who teaches him the ancient art of mixing precious oils and herbs. But
+                                Grenouille's genius is such that he is not satisfied to stop there, and one day he
+                                catches a hint
+                                of a scent that will drive him on a quest to create the “ultimate perfume”—the scent of
+                                a beautiful
+                                young girl.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/017-waterelephants.jpg" class="card-img-top"
+                            alt="Water for Elephants Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">Water for Elephants</h5>
+                            <p class="card-text">Author: Sara Gruen</p>
+                            <p class="card-text">Year: 2006</p>
+                            <p class="card-text">Genre: Novel</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card-text">Description: An atmospheric tale of life and love in a Depression-era
+                                traveling circus.
+                                Nonagenarian Jacob Jankowski reflects back on his wild and wondrous days with a circus.
+                                It's the Depression Era and Jacob, finding himself parentless and penniless, joins the
+                                Benzini Brothers Most Spectacular Show on Earth. There he meets the freaks, grifters,
+                                and misfits that populate this world. Jacob introduces us to Marlena, beautiful star of
+                                the equestrian act; to August, her charismatic but twisted husband (and the circus'
+                                animal trainer); and to Rosie, a seemingly untrainable elephant.
+
+                                Beautifully written, with a luminous sense of time and place, Water for Elephants tells
+                                of love in a world in which love's a luxury few can afford.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="row p-4 mp-4">
+                        <div class="card col-md-4 p-2 mp-4">
+                            <img src="/images/bookcovers/012-spirits.jpg" class="card-img-top"
+                                alt="The House of the Spirits Book Cover">
+                            <div class="card-body">
+                                <h5 class="card-title">The House of the Spirits</h5>
+                                <p class="card-text">Author: Isabel Allende</p>
+                                <p class="card-text">Year: 1982</p>
+                                <p class="card-text">Genre: Novel</p>
+                                <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                                <p class="card-text">Description: Isabel Allende's "The House of the Spirits" traces the
+                                    Trueba family's triumphs and tragedies across generations. From Esteban's power
+                                    pursuits to Clara's mystic ties, to the forbidden love which births Alba, a beacon
+                                    in a
+                                    revolutionary future. One of the most important novels of the twentieth century, The
+                                    House of the Spirits
+                                    is an enthralling epic that spans decades and lives, weaving the personal and the
+                                    political into a universal story of love, magic, and fate.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 p-2 mp-4">
+                            <img src="/images/bookcovers/020-topworld.jpg" class="card-img-top"
+                                alt="Top of the World Book Cover">
+                            <div class="card-body">
+                                <h5 class="card-title">Top of the World</h5>
+                                <p class="card-text">Author: Hans Ruesch</p>
+                                <p class="card-text">Year: 1950</p>
+                                <p class="card-text">Genre: Novel</p>
+                                <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                                <p class="card-text">Description: Ernenek's Eskimo life is a never-ending adventurous
+                                    struggle to provide food and shelter for his family, made easier only by the love of
+                                    his wife and children and the occasional companionship of friends
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Fantasy genre section-->
+        <div class="bg-danger text-light device-width p-2 text-center">
+            <h2 id="fantasy">Fantasy</h2>
+        </div>
+        <!--Fantasy Book Cards-->
+
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row p-4 mp-4">
+
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/013-intervievampire.jpg" class="card-img-top"
+                            alt="Interview with the Vampire Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">Interview with the Vampire</h5>
+                            <p class="card-text">Author: Anne Rice</p>
+                            <p class="card-text">Year: 1976</p>
+                            <p class="card-text">Genre: Fantasy</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card-text">Description: A magnificent, compulsively readable thriller . . . Rice
+                                begins where Bram Stoker and the Hollywood versions leave off and penetrates directly to
+                                the true fascination of the myth—the education of the vampire.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/002-thevampirelestat.jpg" class="card-img-top"
+                            alt="The Vampire Lestat Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">The Vampire Lestat</h5>
+                            <p class="card-text">Author: Anne Rice</p>
+                            <p class="card-text">Year: 1985</p>
+                            <p class="card-text">Genre: Fantasy</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card-text">Description: Once an aristocrat in the heady days of pre-revolutionary
+                                France, now Lestat is a rockstar in the demonic, shimmering 1980s. He rushes through the
+                                centuries in search of others like him, seeking answers to the mystery of his terrifying
+                                exsitence. His story, the second volume in Anne Rice's best-selling Vampire Chronicles,
+                                is mesmerizing, passionate, and thrilling.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/011-hurin.jpg" class="card-img-top"
+                            alt="The Children of Hurin Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">The Children of Hurin</h5>
+                            <p class="card-text">Author: J.R.R. Tolkien</p>
+                            <p class="card-text">Year: 2007</p>
+                            <p class="card-text">Genre: Fantasy</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card-text">Description: The Children of Hurin, begun in 1918, was one of three
+                                'Great Tales' J.R.R. Tolkien worked on throughout his life, though he never realized his
+                                ambition to see it published. Now reconstructed by Christopher Tolkien, painstakingly
+                                editing
+                                together the complete work from his father's many drafts, this book is the culmination
+                                of a tireless thirty-year endeavor by him to bring J.R.R.Tolkien's vast body of
+                                unpublished work to a wide audience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="row p-4 mp-4">
+                        <div class="card col-md-4 p-2 mp-4">
+                            <img src="/images/bookcovers/007-hobbit.jpg" class="card-img-top"
+                                alt="The Hobbit Book Cover">
+                            <div class="card-body">
+                                <h5 class="card-title">The Hobbit</h5>
+                                <p class="card-text">Author: J.R.R. Tolkien</p>
+                                <p class="card-text">Year: 1937</p>
+                                <p class="card-text">Genre: Fantasy</p>
+                                <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                                <p class="card-text">Description: Bilbo Baggins is a hobbit who enjoys a
+                                    comfortable, unambitious life, rarely traveling any farther than his pantry or
+                                    cellar. But his contentment is disturbed when the wizard Gandalf and a company
+                                    of dwarves arrive on his doorstep one day to whisk him away on an adventure.
+                                    They have launched a plot to raid the treasure hoard guarded by Smaug the
+                                    Magnificent, a large and very dangerous dragon.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 p-2 mp-4">
+                            <img src="/images/bookcovers/014-mastermagics.jpg" class="card-img-top" id="fivemagics"
+                                alt="Master of the Five Magics Book Cover">
+                            <div class="card-body">
+                                <h5 class="card-title">Master of the Five Magics</h5>
+                                <p class="card-text">Author: Lyndon Hardy</p>
+                                <p class="card-text">Year: 1980</p>
+                                <p class="card-text">Genre: Fantasy</p>
+                                <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                                <p class="card-text">Description: Alodar was a mere apprentice thaumaturge, learning
+                                    the least of the five arts of magic. As such, he had no right to aspire to the
+                                    hand of the fair lady, Queen Vendora, not even when he saved her during the
+                                    demon-inspired siege of her frontier castle. But aspire he did.
+                                    It was then he learned of the ancient plot behind his rise -- and faced the
+                                    greatest danger any man could dare!
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 p-2 mp-4">
+                            <img src="/images/bookcovers/006-coraline.jpg" class="card-img-top"
+                                alt="Coraline Book Cover">
+                            <div class="card-body">
+                                <h5 class="card-title">Coraline</h5>
+                                <p class="card-text">Author: Neil Gaiman</p>
+                                <p class="card-text">Year: 2008</p>
+                                <p class="card-text">Genre: Fantasy</p>
+                                <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                                <p class="card-text">Description: When Coraline steps through a door to find another
+                                    house strangely similar to her own (only better), things seem marvelous.
+
+                                    But there's another mother there, and another father, and they want her to stay
+                                    and be their little girl. They want to change her and never let her go.
+
+                                    Coraline will have to fight with all her wit and courage if she is to save
+                                    herself and return to her ordinary life.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Non fiction genre section-->
+        <div class="bg-danger text-light device-width p-2 text-center">
+            <h2 id="nonfiction">Non-fiction</h2>
+        </div>
+
+        <!--Non fiction Book Cards-->
+
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row p-4 mp-4">
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/004-bellbutterfly.jpg" class="card-img-top"
+                            alt="The Diving Bell and the Butterfly Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">The Diving Bell and the Butterfly</h5>
+                            <p class="card-text">Author: Jean-Dominique Bauby</p>
+                            <p class="card-text">Year: 1997</p>
+                            <p class="card-text">Genre: Non-fiction/Memoir</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="card-text">Description: In 1995, Jean-Dominique Bauby was the editor-in-chief of
+                                French Elle, the father of two young childen, a 44-year-old man known and loved for his
+                                wit, his style, and his impassioned approach to life. By the end of the year he was also
+                                the victim of a rare kind of stroke to the brainstem. After 20 days in a coma, Bauby
+                                awoke into a body which had all but stopped working: only his left eye functioned,
+                                allowing him to see and, by blinking it, to make clear that his mind was unimpaired.
+                                Almost miraculously, he was soon able to express himself in the richest detail:
+                                dictating a word at a time, blinking to select each letter as the alphabet was recited
+                                to him slowly, over and over again. In the same way, he was able eventually to compose
+                                this extraordinary book.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/008-fivechimneys.jpg" class="card-img-top"
+                            alt="Five Chimneys Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">Five Chimneys</h5>
+                            <p class="card-text">Author: Olga Lengyel</p>
+                            <p class="card-text">Year: 1947</p>
+                            <p class="card-text">Genre: Non-fiction/Memoir</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                            <p class="card-text">Description: Olga Lengyel tells, frankly and without compromise, one of
+                                the most horrifying stories of all time. This true, documented chronicle is the
+                                intimate, day-to-day record of a beautiful woman who survived the nightmare of Auschwitz
+                                and Birchenau. This book is a necessary reminder of one of the ugliest chapters in the
+                                history of human civilization.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 p-2 mp-4">
+                        <img src="/images/bookcovers/022-thedoors.jpg" class="card-img-top"
+                            alt="The Doors of Perception Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">The Doors of Perception</h5>
+                            <p class="card-text">Author: Aldous Huxley</p>
+                            <p class="card-text">Year: 1956</p>
+                            <p class="card-text">Genre: Non-fiction</p>
+                            <p class="card-text">Rating: &#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                            <p class="card-text">Description: Among the most profound and influential explorations of
+                                mind-expanding psychedelic drugs ever written, here are two complete classic books—The
+                                Doors of Perception and Heaven and Hell—in which Aldous Huxley, author of Brave New
+                                World, reveals the mind's remote frontiers and the unmapped areas of human
+                                consciousness. This edition also features an additional essay, "Drugs That Shape Men's
+                                Minds," now included for the first time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- This is my footer -->
+    <footer class="bg-dark text-light p-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>&copy; 2023 ProsePalette. All Rights Reserved.</strong></p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-light"><strong>Created by Ana Gonzalez for the Promineo Tech Front End Bootcamp using
+                            HTML and Bootstrap.</strong></p>
+                    <p>
+                        Ana is a physics student who loves learning about how the universe works. Technology is also a
+                        big part of her professional interests.
+                        She enjoys reading books as well as expressing herself creatively through drawing and writing.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 ">
+                    <!-- Back to Top Button -->
+                    <a href="#" class="btn-danger btn-lg fixed-bottom text-center" id="backToTop"><strong>Back to
+                            Top</strong></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

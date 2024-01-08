@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share a Book - ProsePalette Book Picks</title>
+    <!--including bootstrap in my code using relative location -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+
+<body class="bg-light text-dark" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+
+    <!-- this is the menu bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ProsePalette</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ppmenu"
+                aria-controls="ppmenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="ppmenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="bookshelf.html">Bookshelf</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Share a Book</a>
+                    </li>
+
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container p-5">
+
+        <!-- form description -->
+        <div class="row">
+            <div class="col-md-12" style="text-align: center">
+                <h1>Do you wish to recommend a book?</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 p-4">
+                <div class="card bg-danger text-light rounded-3 mb-3 p-4">
+                    <blockquote class="blockquote">
+                        <p>
+                            "A book is a dream that you hold in your hands."
+                        </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer mb-0 text-light">
+                        Neil Gaiman
+                    </figcaption>
+                </div>
+                <div><p>Have you recently stumbled upon a book that you couldn't put down? Or perhaps an all-time favorite that
+                you
+                think everyone should read? We'd love to hear about it!
+
+                Use the form below to submit your book recommendations. Let's build a collection of amazing books
+                together.
+
+                <strong>Thank you for contributing to our growing list of recommended reads!</strong></p></div>
+
+                <div class="p-3"><img src="images/sharebook.png" class="img-fluid rounded text-center"
+                        alt="book with flowing colors from the pages"></div>
+
+            </div>
+
+            <!-- form for users to submit books -->
+            <div class="col-md-6 p-4">
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="John Doe">
+                </div>
+                <div class="mb-3">
+                    <label for="e-mail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="e-mail" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="booktitle" class="form-label">Book Title</label>
+                    <input type="text" class="form-control" id="booktitle" placeholder="Enter the book title">
+                </div>
+                <div class="mb-3">
+                    <label for="author" class="form-label">Author</label>
+                    <input type="text" class="form-control" id="booktitle" placeholder="Enter author name">
+                </div>
+                <div class="mb-3">
+                    <label for="genre" class="form-label">Genre</label>
+                    <input type="text" class="form-control" id="genre" placeholder="Enter book genre">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="bookCover">Please upload a cover image for the book.</label>
+                    <input type="file" class="form-control" id="bookCover" accept="image/*">
+                </div>
+                <div class="mb-3">
+                    <label for="bookdescription" class="form-label">Describe the book below (no spoilers please!) and
+                        reason for recommendation:</label>
+                    <textarea class="form-control" id="bookdescription" rows="3"></textarea>
+                </div>
+
+
+                <button type="button" class="btn btn-danger px-4">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- This is my footer -->
+    <footer class="bg-dark text-light p-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>&copy; 2023 ProsePalette. All Rights Reserved.</strong></p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-light"><strong>Created by Ana Gonzalez for the Promineo Tech Front End Bootcamp using
+                            HTML and Bootstrap.</strong></p>
+                    <p>
+                        Ana is a physics student who loves learning about how the universe works. Technology is also a
+                        big part of her professional interests.
+                        She enjoys reading books as well as expressing herself creatively through drawing and writing.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 ">
+                    <!-- Back to Top Button -->
+                    <a href="#" class="btn-danger btn-lg text-center fixed-bottom" id="backToTop"><strong>Back to
+                            Top</strong></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
